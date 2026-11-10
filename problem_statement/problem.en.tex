@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{booktabs}
+
+
+% for code blocks. down below, use \begin{lstlisting} ... \end{lstlisting}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{teal},
+  frame=single,
+  breaklines=true,
+  showstringspaces=false
+}
+
+% Define \problemname and \illustration if not using Kattis template
+\newcommand{\problemname}[1]{\section*{#1}}
+\newcommand{\illustration}[3]{%
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=#1\textwidth]{#2}
+        \caption{#3}
+    \end{figure}
+}
+
+\begin{document}
+
+\problemname{Preemptive CPU Scheduling}
+
+% Example use of the \illustration command
+% \illustration{0.3}{filename.jpg}{Photo by \href{url_here}{link text here, e.g. author name}}
+
+A CPU is a computer processor that does tasks, called processes. The CPU can execute
+a single process at a time, but it is also \textit{preemptive}, meaning at any point it can pause
+a process to work on another. The CPU is blazingly fast and so switching between 
+processes does not take any time. $N$ processes arrive, and the CPU needs to schedule 
+the processes. Each process has
+\begin{itemize}
+    \item An arrival time $a_i$, in units of time
+    \item A burst time $b_i$, the total time the process needs to spend on the CPU before it is finished, in units of time
+    \item A memory placement time $m_i$, the time taken to place computed results of a finished process in memory, in units of time
+\end{itemize}
+We consider a process to be \textbf{complete} when it has finished on the CPU and it's result has been placed in memory.
+We define the \textbf{waiting time} of a process as the total units of time elapsed between its arrival and its
+completion, excluding time the CPU spend working on it. Schedule all $N$ tasks to run on the CPU to find the minimum total
+waiting time possible, requiring that all processes must be completed.
+
+\section*{Input}
+
+A single integer $1 \leq N \leq 10^5$, indicating the number of processes, followed by $N$
+lines, each containing $1 \leq a_i$, $b_i$, $m_i \leq 10^5$.
+
+\section*{Output}
+
+A single integer, the minimum possible waiting time to complete all scheduled processes,
+mod $1\,000\,000\,007$.
+
+\section*{Sample Input \hspace{75px} Sample Output}
+
+\begin{minipage}[t]{0.48\textwidth}
+\begin{lstlisting}
+3
+0 5 2
+1 2 1
+2 1 3
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{lstlisting}
+10
+\end{lstlisting}
+\end{minipage}
+
+
+\end{document}
