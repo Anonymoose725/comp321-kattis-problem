@@ -48,7 +48,8 @@ the processes. Each process has
     \item A burst time $b_i$, the total time the process needs to spend on the CPU before it is finished, in units of time
     \item A memory placement time $m_i$, the time taken to place computed results of a finished process in memory, in units of time
 \end{itemize}
-We consider a process to be \textbf{complete} when it has finished on the CPU and it's result has been placed in memory.
+We consider a process to be \textbf{complete} when it has finished on the CPU and it's result has been placed in memory. Memory 
+placement is not an operation the CPU needs to do, and multiple placements can happen at the same time.
 We define the \textbf{waiting time} of a process as the total units of time elapsed between its arrival and its
 completion, excluding time the CPU spend working on it. Schedule all $N$ tasks to run on the CPU to find the minimum total
 waiting time possible, requiring that all processes must be completed.
