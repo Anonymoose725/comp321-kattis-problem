@@ -1,7 +1,7 @@
 # Deliverable 2: Initial complete solution: – November 20th (50 points)
 
 ## Deliverable 2.1
-Owner: Ethan
+Owner: Ethan, 
 Status: Done ✅
 
 For this first deliverable, you are required to submit a LATEX document that presents a clear, complete,
@@ -21,7 +21,7 @@ essential instructions and guidance.
 
 
 ## Deliverable 2.2 - Two Correct and Efficient Solutions
-Owner:
+Owner:,
 Status:
 
 For this second deliverable, you are required to implement at least two correct, efficient, well-structured,
@@ -30,7 +30,7 @@ Java, and Python 3. Each solution must be contained in a single file and placed 
 folder, located within the problemskeleton directory.
 
 ## Deliverable 2.3 - One Incorrect or Inefficient Solution
-Owner:
+Owner:,
 Status:
 
 For this third deliverable, you must implement at least one incorrect or inefficient solution that demon-
@@ -40,7 +40,7 @@ inside the submissions/ folder, located within the problemskeleton directory.
 
 
 ## Deliverable 2.4 - Test-Case Generator
-Owner: Ethan
+Owner: Ethan,
 Status: To-do
 
 For this deliverable, you must implement a test case generator that produces valid input and output files
@@ -50,7 +50,7 @@ cases to ensure comprehensive coverage. Place your generator inside the folder t
 folder, located within the problemskeleton directory.
 
 ## Deliverable 2.5 - Input Files
-Owner:
+Owner:,
 Status:
 
 For the fifth deliverable, you are required to submit input test cases in two categories:
@@ -70,7 +70,7 @@ Please ensure that your descriptions are clear and concise to help us understand
 case.
 
 ## Deliverable 2.6 - Output Files
-Owner:
+Owner:,
 Status:
 
 For this deliverable, you must submit both sample and secret output files with the .ans extension. Each
@@ -80,7 +80,7 @@ and names of the input and output files match exactly. Additionally, the total c
 files must not exceed 50 MB.
 
 ## Deliverable 2.7 - Input Validator
-Owner: Ethan
+Owner: Ethan,
 Status: To-do
 
 For this deliverable, you must create an input format validator that returns exit code 42 when the input
@@ -94,7 +94,7 @@ Please ensure you read the README.txt file located in that folder, as it contain
 instructions and guidelines.
 
 ## Deliverable 2.8 - Presentation slides
-Owner:
+Owner:,
 Status:
 
 You are required to prepare a slide deck to support a 10-minute presentation of your problem. The
