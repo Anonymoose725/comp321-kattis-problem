@@ -41,7 +41,7 @@ inside the submissions/ folder, located within the problemskeleton directory.
 
 ## Deliverable 2.4 - Test-Case Generator
 Owner: Ethan,
-Status: To-do
+Status: Done ✅
 
 For this deliverable, you must implement a test case generator that produces valid input and output files
 for your problem (see the next two deliverables for more information). The generator may be written in
