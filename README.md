@@ -81,7 +81,7 @@ files must not exceed 50 MB.
 
 ## Deliverable 2.7 - Input Validator
 Owner: Ethan,
-Status: To-do
+Status: Done ✅
 
 For this deliverable, you must create an input format validator that returns exit code 42 when the input
 is correctly formatted, and a different exit code when formatting issues are detected. Your validator
