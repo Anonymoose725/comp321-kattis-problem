@@ -30,8 +30,8 @@ Java, and Python 3. Each solution must be contained in a single file and placed 
 folder, located within the problemskeleton directory.
 
 ## Deliverable 2.3 - One Incorrect or Inefficient Solution
-Owner:,
-Status:
+Owner:Sophia
+Status:Almost done
 
 For this third deliverable, you must implement at least one incorrect or inefficient solution that demon-
 strates one or more common Kattis errors, such as Wrong Answer, Time Limit Exceeded, or Memory
@@ -50,8 +50,8 @@ cases to ensure comprehensive coverage. Place your generator inside the folder t
 folder, located within the problemskeleton directory.
 
 ## Deliverable 2.5 - Input Files
-Owner:,
-Status:
+Owner:,Sophia 
+Status: To do
 
 For the fifth deliverable, you are required to submit input test cases in two categories:
 - Sample Inputs: At least 3 files
