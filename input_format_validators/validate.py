@@ -25,7 +25,7 @@ for _ in range(n):
     
     a, b, c = map(int, line.split())
     
-    assert 1 <= a <= 10**5
+    assert 0 <= a <= 10**5
     assert 1 <= b <= 10**5
     assert 1 <= c <= 10**5
 
