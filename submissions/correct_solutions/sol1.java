@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class sol1 {
-    static final long MOD = 1_000_000_007L;
 
     public static void main(String[] args) {
         Scanner fs = new Scanner(System.in);
@@ -14,7 +13,7 @@ public class sol1 {
         for (int i = 0; i < n; i++) {
             a[i] = fs.nextLong();
             b[i] = fs.nextLong();
-            sumM = (sumM + fs.nextLong()) % MOD;
+            sumM = (sumM + fs.nextLong());
             rem[i] = b[i]; // time remaining
         }
 
@@ -37,14 +36,14 @@ public class sol1 {
             long nextArrival = (p < n) ? a[byArrival[p]] : Long.MAX_VALUE;
             long run = Math.min(rem[cur], nextArrival - t);
             t += run ;
-            rem [ cur ] -= run ;
+            rem[cur] -= run ;
 
             if (rem[cur] == 0) {
-                ans = (ans + (t - a[cur] - b[cur]) % MOD) % MOD;
+                ans = ans + (t - a[cur] - b[cur]);
             } else {
                 heap.add(cur); // preempted by an arrival
             }
         }
-        System.out.println((ans + sumM) % MOD);
+        System.out.println(ans + sumM);
     }
 }

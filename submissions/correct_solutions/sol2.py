@@ -1,9 +1,6 @@
 import sys
 import heapq
 
-MOD = 1_000_000_007
-
-
 def solve():
     input_line = sys.stdin.buffer.readline
     n = int(input_line())
@@ -14,7 +11,7 @@ def solve():
     for _ in range(n):
         arrival, burst, memory = map(int, input_line().split())
         jobs.append((arrival, burst))
-        answer = (answer + memory) % MOD
+        answer = (answer + memory)
 
     jobs.sort()
 
@@ -37,7 +34,7 @@ def solve():
         else:
             duration = remaining
 
-        answer = (answer + len(ready) * duration) % MOD
+        answer = (answer + len(ready) * duration)
 
         time += duration
         remaining -= duration
