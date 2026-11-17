@@ -1,29 +1,26 @@
-NOT FINISHED
-
 sample/sample1.in Problem statement example
-sample/sample2.in minimal preemption example
-sample/sample3.in no preemption example
+sample/sample2.in Minimal preemption example
+sample/sample3.in No preemption example
 
-secret/01.in N = 1 single process minimum input case
-secret/02.in N = 2 no overlap and no preemption small input case
-secret/03.in N = 2 with preemption small input case
-secret/04.in all jobs arrive at t = 0 
-secret/05.in all processes same burst time 
-secret/06.in large idle gap between processes
-secret/07.in 
-secret/08.in
-secret/09.in
-secret/10.in
-secret/11.in
-secret/12.in N = 10 small random case 
-secret/13.in N = 21 small random case
-secret/14.in N = 100 medium random case
-secret/15.in N = 1001 medium random case
-secret/16.in N = 50000 Large random case
-secret/17.in N = 80000 Large random case 
-secret/18.in N=10^5, dense arrivals with heavy preemption TLE + WA case
-secret/19.in N=10^5, big gaps between arrivals, TLE case
-secret/20.in N=10^5, all same arrival, TLE case
-secret/21.in N=10^5, max values, TLE + big number case 
-secret/22.in N = 10^5 TLE case
-
+secret/01.in N=1, single process. Minimum input case
+secret/02.in N=2, no preemption. Baseline small input
+secret/03.in N=2 with single preemption. Catches the WA solution
+secret/04.in Medium size, all jobs arrive at t=0. Every process is available from the start with no future arrivals
+secret/05.in Medium size, large idle gap between processes. Tests idle CPU handling
+secret/06.in N=3, max values near 10^5. Checks large-number handling
+secret/07.in Repeated preemption, one long job with short jobs arriving during it. Catches the WA solution
+secret/08.in Small random case
+secret/09.in Small random case
+secret/10.in Small random case
+secret/11.in Small random case
+secret/12.in Medium random case
+secret/13.in Medium random case
+secret/14.in Medium random case
+secret/15.in Medium random case
+secret/16.in Large random case
+secret/17.in Large random case
+secret/18.in Large random case
+secret/19.in Large random case
+secret/20.in N=10^5 repeated preemption. Catches both the TLE and WA solutions
+secret/21.in N=10^5, max values throughout. TLE case that also stresses large numbers
+secret/22.in N=10^5, random. General TLE case
