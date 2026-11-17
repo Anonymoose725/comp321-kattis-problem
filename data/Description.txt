@@ -7,20 +7,19 @@ secret/02.in N=2, no preemption. Baseline small input
 secret/03.in N=2, with single preemption. Catches the WA solution
 secret/04.in Medium size, all jobs arrive at t=0. Every process is available from the start with no future arrivals
 secret/05.in Medium size, large idle gap between processes. Tests idle CPU handling
-secret/06.in N=3, max values near 10^5. Checks large number handling
-secret/07.in Repeated preemption, one long job with short jobs arriving during it. Catches the WA solution
+secret/06.in Repeated preemption, one long job with short jobs arriving during it. Catches the WA solution
+secret/07.in Small random case
 secret/08.in Small random case
 secret/09.in Small random case
 secret/10.in Small random case
-secret/11.in Small random case
+secret/11.in Medium random case
 secret/12.in Medium random case
 secret/13.in Medium random case
 secret/14.in Medium random case
-secret/15.in Medium random case
+secret/15.in Large random case
 secret/16.in Large random case
 secret/17.in Large random case
 secret/18.in Large random case
-secret/19.in Large random case
-secret/20.in N=10^5, repeated preemption. Catches both the TLE and WA solutions
-secret/21.in N=10^5, max values throughout. TLE case that also stresses large numbers
-secret/22.in N=10^5, random. General TLE case
+secret/19.in N=10^5, repeated preemption. Catches both the TLE and WA solutions
+secret/20.in N=10^5, max values throughout. TLE case that also stresses large numbers
+secret/21.in N=10^5, random. General TLE case
