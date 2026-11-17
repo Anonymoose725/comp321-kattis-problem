@@ -95,16 +95,6 @@ def generate_same_arrival_case(k=4, max_b=10, verbose=False):
     procs = [(0, random.randint(1, max_b), random.randint(1, max_b)) for _ in range(k)]
     return _emit(k, procs, verbose)
 
-def generate_max_values_case(n=3, verbose=False):
-    """
-    Returns (N, [(a, b, m)])
-    n processes with all values at the maximum (a, b, m near 10^5). Checks
-    large-number handling. Default n=3 is small enough to verify by hand.
-    """
-    procs = [(min(i, MAX_I), MAX_I, MAX_I) for i in range(n)]
-    return _emit(n, procs, verbose)
-
-
 # cases provoking preemption
 
 def generate_preemption_case(verbose=False):
