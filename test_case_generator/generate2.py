@@ -92,7 +92,7 @@ def generate_cascade_case(k=5, long_burst=None, verbose=False):
     Answer solution. Pass a large k for a big WA + TLE stress case.
     """
     if long_burst is None:
-        long_burst = max(k * 2, 100)
+        long_burst = min(max(k * 2, 100), MAX_I)
     procs = [(0, long_burst, 1)] + [(i, 1, 1) for i in range(1, k)]
     return _emit(k, procs, verbose)
 
