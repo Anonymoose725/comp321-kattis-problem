@@ -22,50 +22,6 @@ def generate_random_case(n=None, verbose=False) -> Case:
              for _ in range(N)]
     
     return _emit(N, procs, verbose)
-    
-def generate_realistic_case(max_n=6, max_i=6, verbose=False):
-    """
-    Returns (N, [(a, b, m)])
-    Within custom constraints, with realistic and readable defaults 
-    ex. max 6 processes
-    """
-    N = random.randint(1, max_n)
-    procs = [(random.randint(0, max_i), 
-              random.randint(1, max_i), 
-              random.randint(1, max_i))
-             for _ in range(N)]  
-    
-    return _emit(N, procs, verbose)  
-
-def generate_left_edge_case(eps=3, verbose=False):
-    """
-    Returns (N, [(a, b, m)])
-    Values are close to their minimums: N in [1, 1+eps],
-    a in [0, eps], b and m in [1, 1+eps].
-    Heavy on ties (same arrival, same burst), which is where schedulers break.
-    """
-    N = random.randint(1, 1 + eps)
-    procs = [(random.randint(0, eps),
-              random.randint(1, 1 + eps),
-              random.randint(1, 1 + eps))
-             for _ in range(N)]
-    
-    return _emit(N, procs, verbose)
-
-def generate_right_edge_case(eps=3, verbose=False):
-    """
-    Returns (N, [(a, b, m)])
-    Values are close to their maximums: N in [MAX_N - eps, MAX_N],
-    a, b, m in [MAX_I - eps, MAX_I].
-    Stresses overflow and performance.
-    """
-    N = random.randint(MAX_N - eps, MAX_N)
-    procs = [(random.randint(MAX_I - eps, MAX_I),
-              random.randint(MAX_I - eps, MAX_I),
-              random.randint(MAX_I - eps, MAX_I))
-             for _ in range(N)]
-    
-    return _emit(N, procs, verbose)
 
 
 # =============================================================
