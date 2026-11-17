@@ -13,9 +13,9 @@ def _emit(N: int, procs: list[tuple[int, int, int]], verbose: bool) -> Case:
     return (N, procs)
 
 
-def generate_random_case(verbose=False) -> Case:
+def generate_random_case(n=None, verbose=False) -> Case:
     """Returns (N, [(a, b, m)]), number of processes and each a_i, b_i, m_i"""
-    N = random.randint(1, MAX_N)         # N
+    N = n if n is not None else random.randint(1, MAX_N)         # N
     procs = [(random.randint(0, MAX_I),  # a_i
               random.randint(1, MAX_I),  # b_i
               random.randint(1, MAX_I))  # m_i
