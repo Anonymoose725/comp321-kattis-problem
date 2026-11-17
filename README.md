@@ -31,7 +31,7 @@ folder, located within the problemskeleton directory.
 
 ## Deliverable 2.3 - One Incorrect or Inefficient Solution
 Owner:Sophia
-Status:Almost done
+Status: Done ✅
 
 For this third deliverable, you must implement at least one incorrect or inefficient solution that demon-
 strates one or more common Kattis errors, such as Wrong Answer, Time Limit Exceeded, or Memory
@@ -51,7 +51,7 @@ folder, located within the problemskeleton directory.
 
 ## Deliverable 2.5 - Input Files
 Owner:,Sophia 
-Status: To do
+Status: Done ✅
 
 For the fifth deliverable, you are required to submit input test cases in two categories:
 - Sample Inputs: At least 3 files
