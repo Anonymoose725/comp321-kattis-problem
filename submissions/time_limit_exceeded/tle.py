@@ -53,4 +53,4 @@ while done < n:
         waitingTime += time - arrival[cur] - burst[cur]
         done += 1
 
-print((waitingTime + sumMemory) % 1_000_000_007)
+print(waitingTime + sumMemory)

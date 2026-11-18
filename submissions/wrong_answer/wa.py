@@ -52,4 +52,4 @@ while p < n or heap:
     # job finished, record its waiting time
     waitingTime += time - arrival[cur] - burst[cur]
 
-print((waitingTime + sumMemory) % 1_000_000_007)
+print(waitingTime + sumMemory)
