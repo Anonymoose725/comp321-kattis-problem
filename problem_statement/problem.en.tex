@@ -1,7 +1,9 @@
 \documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
 \usepackage{amsmath, amssymb}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{wrapfig} % for wrapping around
 \usepackage{listings}
 \usepackage{booktabs}
 
@@ -21,22 +23,27 @@
   showstringspaces=false
 }
 
-% Define \problemname and \illustration if not using Kattis template
 \newcommand{\problemname}[1]{\section*{#1}}
-\newcommand{\illustration}[3]{%
-    \begin{figure}[h]
+
+% \illustration{width as fraction of text width}{file}{caption}
+% Places the image at the right edge with text wrapping around it.
+% Leave the caption empty ({}) for no caption.
+\newcommand{\illustration}[3]{
+    \begin{wrapfigure}{r}{#1\textwidth}
+        \vspace{-12pt}
         \centering
-        \includegraphics[width=#1\textwidth]{#2}
-        \caption{#3}
-    \end{figure}
+        \includegraphics[width=\linewidth]{#2}
+        \if\relax\detokenize{#3}\relax\else\par\smallskip{\small #3}\fi
+        \vspace{-12pt}
+        \caption{A CPU schedule illustration, showing how processes can be \textit{preempted} and later finished.}
+    \end{wrapfigure}%
 }
 
 \begin{document}
 
 \problemname{Preemptive CPU Scheduling}
 
-% Example use of the \illustration command
-% \illustration{0.3}{filename.jpg}{Photo by \href{url_here}{link text here, e.g. author name}}
+\illustration{0.48}{cpu_scheduling.png}{}
 
 A CPU is a computer processor that does tasks, called processes. The CPU can execute
 a single process at a time, but it is also \textit{preemptive}, meaning at any point it can pause
@@ -58,13 +65,13 @@ waiting time possible, requiring that all processes must be completed.
 \section*{Input}
 
 A single integer $1 \leq N \leq 10^5$, indicating the number of processes, followed by $N$
-lines, each containing $0 \leq a_i \leq 10^5$, and $1 \leq b_i, m_i \leq 10^5$
+lines, each containing $0 \leq a_i \leq 10^5$, and $1 \leq b_i, m_i \leq 10^5$, seperated by spaces.
 
 \section*{Output}
 
 A single integer, the minimum possible waiting time to complete all scheduled processes.
 
-\section*{Sample Input \hspace{75px} Sample Output}
+\section*{Sample Input \hspace{130px} Sample Output}
 
 \begin{minipage}[t]{0.48\textwidth}
 \begin{lstlisting}
