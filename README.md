@@ -21,8 +21,8 @@ essential instructions and guidance.
 
 
 ## Deliverable 2.2 - Two Correct and Efficient Solutions
-Owner:,
-Status:
+Owner: Santiago and Ethan
+Status: Done ✅
 
 For this second deliverable, you are required to implement at least two correct, efficient, well-structured,
 and well-documented solution. They must be in two of the three following programming languages: C++,
@@ -70,8 +70,8 @@ Please ensure that your descriptions are clear and concise to help us understand
 case.
 
 ## Deliverable 2.6 - Output Files
-Owner:,
-Status:
+Owner: Santiago
+Status: Done ✅
 
 For this deliverable, you must submit both sample and secret output files with the .ans extension. Each
 output file must correspond to an input file with the same base name (i.e., matching .in and .ans file
