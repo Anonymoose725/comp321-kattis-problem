@@ -1,3 +1,16 @@
+"""
+Idea: Greedy shortest job first, but WITHOUT preemption
+      When the CPU is free, pick the arrived job with the smallest burst time
+      and run it all the way to completion, never pausing it for a new arrival
+
+      Jobs are stored from the input, sorted by arrival time, and pushed into a
+      minheap as they become available
+      The CPU always pops the shortest available job and runs it fully
+
+      This is wrong because it never preempts. If a short job arrives while a
+      long job is running, the short job must wait until the long one finishes,
+      which pushes the total waiting time above the optimal
+"""
 import sys 
 import heapq
 input = sys.stdin.readline

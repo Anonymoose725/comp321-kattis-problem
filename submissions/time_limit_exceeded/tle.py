@@ -1,3 +1,16 @@
+"""
+Idea: Same strategy as the accepted solution, always run the job with the
+      shortest remaining CPU time, and reconsider every time a new job arrives
+
+      This version does NOT use a heap. Every time a decision is needed it
+      scans the whole list of processes to find the arrived, unfinished job
+      with the smallest remaining time, and scans again to find the next arrival
+      The chosen job runs until it finishes or until the next job arrives
+
+      Since it rescans all N processes at every decision it is O(N^2), so it
+      times out on large inputs even though the answer it produces is correct
+"""
+
 import sys
 input = sys.stdin.readline
 
