@@ -1,6 +1,3 @@
-import sys
-import heapq
-
 """
 
 Idea: Always choose the job with shortest remaining CPU time
@@ -14,11 +11,13 @@ Idea: Always choose the job with shortest remaining CPU time
 
 """
 
+import sys
+import heapq
+
 def solve():
     input_line = sys.stdin.buffer.readline
     n = int(input_line()) #n being the number of jobs
 
-    
     jobs = [] #store jobs as tuples job_n = (arrival, burst)
     answer = 0
 
