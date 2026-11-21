@@ -11,7 +11,7 @@ import re
 
 # read and validate N
 n_line = sys.stdin.readline()
-assert re.fullmatch(r'[1-9][0-9]*\n?', n_line) # N needs to be a number 
+assert re.fullmatch(r'[1-9][0-9]*\n', n_line) # N needs to be a number 
 
 n = int(n_line)
 assert 1 <= n <= 10**5
@@ -21,7 +21,7 @@ for _ in range(n):
     line = sys.stdin.readline()
     
     # must be three positive integers seperated by spaces
-    assert re.fullmatch(r'[1-9][0-9]* [1-9][0-9]* [1-9][0-9]*\n', line)
+    assert re.fullmatch(r'(0|[1-9][0-9]*) [1-9][0-9]* [1-9][0-9]*\n', line)
     
     a, b, c = map(int, line.split())
     

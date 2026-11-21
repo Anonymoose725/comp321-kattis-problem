@@ -5,3 +5,4 @@
 *.fdb_latexmk
 .DS_Store
 *.gz
+problem_statement/cpu_scheduling.png
